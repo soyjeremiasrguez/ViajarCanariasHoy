@@ -1,95 +1,117 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ViajarCanariasHoy.com</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+  <svg width="280" height="40" viewBox="0 0 700 100" xmlns="http://www.w3.org/2000/svg">
+  <text x="0" y="70" font-family="Montserrat, sans-serif" font-size="60" font-weight="bold" fill="#0072ff">
+    Viajar
+  </text>
+  <text x="220" y="70" font-family="Montserrat, sans-serif" font-size="60" font-weight="bold" fill="#00c6ff">
+    Canarias
+  </text>
+  <text x="480" y="70" font-family="Montserrat, sans-serif" font-size="60" font-weight="bold" fill="#ffd600">
+    Hoy.com
+  </text>
+</svg>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Viaja a Canarias con las mejores ofertas y guías turísticas. Descubre playas, excursiones y alojamiento en las Islas Canarias." />
+<title>Viajar Canarias Hoy - Tu web de viajes a Canarias</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-  <!-- Header -->
-  <header>
-    <nav class="navbar">
-      <div class="logo">Viajar<span>Canarias</span>Hoy.com</div>
-      <ul class="nav-links">
-        <li><a href="#destinos">Destinos</a></li>
-        <li><a href="#ofertas">Ofertas</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Hero -->
+<header>
+  <nav class="navbar">
+    <div class="logo">Viajar Canarias Hoy</div>
+    <ul class="nav-links">
+      <li><a href="#destinos">Destinos</a></li>
+      <li><a href="#ofertas">Ofertas</a></li>
+      <li><a href="#guias">Guías</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
   <section class="hero">
-    <h1>Descubre el Paraíso Canario</h1>
-    <p>Tu próxima aventura en las Islas comienza aquí</p>
-    <a href="#destinos" class="btn-primary">Ver destinos</a>
+    <h1>Descubre las maravillas de Canarias</h1>
+    <p>Las mejores ofertas y guías para tu próximo viaje.</p>
+    <a href="#ofertas" class="btn-primary">Ver ofertas</a>
   </section>
+</header>
 
-  <!-- Destinos -->
+<main>
   <section id="destinos" class="section-padding">
-    <h2>Destinos Populares</h2>
+    <h2>Destinos destacados</h2>
     <div class="cards">
-      <div class="card">
-        <img src="images/tenerife.webp" alt="Tenerife">
+      <article class="card">
+        <img src="images/tenerife.jpg" alt="Playa en Tenerife" />
         <h3>Tenerife</h3>
-        <p>Playas volcánicas, Teide y vida nocturna vibrante.</p>
-      </div>
-      <div class="card">
-        <img src="images/gran-canaria.jpg" alt="Gran Canaria">
+        <p>Disfruta del Teide, playas y vida nocturna.</p>
+      </article>
+      <article class="card">
+        <img src="images/gran-canaria.jpg" alt="Paisaje en Gran Canaria" />
         <h3>Gran Canaria</h3>
-        <p>Dunas, cultura y paisajes impresionantes.</p>
-      </div>
-      <div class="card">
-        <img src="images/lanzarote.jpg" alt="Lanzarote">
+        <p>Montañas, dunas y cultura local.</p>
+      </article>
+      <article class="card">
+        <img src="images/lanzarote.jpg" alt="Volcanes en Lanzarote" />
         <h3>Lanzarote</h3>
-        <p>Arte, volcanes y playas doradas inolvidables.</p>
-      </div>
+        <p>Parques naturales y paisajes volcánicos.</p>
+      </article>
     </div>
   </section>
 
-  <!-- Ofertas -->
-  <section id="ofertas" class="section-padding">
-    <h2>Ofertas Especiales</h2>
+  <section id="ofertas" class="section-padding bg-light">
+    <h2>Ofertas exclusivas</h2>
     <div class="cards">
-      <div class="card">
-        <h3>Paquete Romántico</h3>
-        <p>Escapada para dos en Fuerteventura</p>
-        <a href="#" class="btn-secondary">Reservar ahora</a>
-      </div>
-      <div class="card">
-        <h3>Viaje en Familia</h3>
-        <p>7 días con hotel + actividades en Tenerife</p>
-        <a href="#" class="btn-secondary">Ver más</a>
-      </div>
+      <article class="card">
+        <h3>Paquete Tenerife 5 días</h3>
+        <p>Vuelo + hotel desde 299€</p>
+        <a href="https://canarias.com/paquete-tenerife?aff=TU_CODIGO_AFILIADO" target="_blank" class="btn-secondary">Reservar ahora</a>
+      </article>
+      <article class="card">
+        <h3>Gran Canaria Todo Incluido</h3>
+        <p>Estancia y actividades desde 399€</p>
+        <a href="https://canarias.com/gran-canaria-todo-incluido?aff=TU_CODIGO_AFILIADO" target="_blank" class="btn-secondary">Reservar ahora</a>
+      </article>
+      <article class="card">
+        <h3>Lanzarote Aventura</h3>
+        <p>Excursiones y alojamiento desde 349€</p>
+        <a href="https://canarias.com/lanzarote-aventura?aff=TU_CODIGO_AFILIADO" target="_blank" class="btn-secondary">Reservar ahora</a>
+      </article>
     </div>
   </section>
 
-  <!-- Contacto -->
-  <section id="contacto" class="section-padding">
-    <h2>Contáctanos</h2>
-    <form class="contact-form">
-      <label for="nombre">Nombre</label>
+  <section id="guias" class="section-padding">
+    <h2>Guías de viaje</h2>
+    <article>
+      <h3>Qué hacer en Tenerife</h3>
+      <p>Te mostramos las mejores actividades y lugares imprescindibles.</p>
+      <a href="guias.html#tenerife" class="btn-link">Leer guía</a>
+    </article>
+    <article>
+      <h3>Explora Gran Canaria</h3>
+      <p>Consejos para conocer la isla como un local.</p>
+      <a href="guias.html#gran-canaria" class="btn-link">Leer guía</a>
+    </article>
+  </section>
+
+  <section id="contacto" class="section-padding bg-light">
+    <h2>Contacto</h2>
+    <form action="#" method="post" class="contact-form">
+      <label for="nombre">Nombre:</label>
       <input type="text" id="nombre" name="nombre" required />
-
-      <label for="email">Correo electrónico</label>
+      <label for="email">Email:</label>
       <input type="email" id="email" name="email" required />
-
-      <label for="mensaje">Mensaje</label>
-      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-
-      <button type="submit">Enviar mensaje</button>
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+      <button type="submit" class="btn-primary">Enviar</button>
     </form>
   </section>
+</main>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 ViajarCanariasHoy.com | Todos los derechos reservados</p>
-  </footer>
+<footer>
+  <p>© 2025 Viajar Canarias Hoy. Afiliado de Canarias.com</p>
+</footer>
 
 </body>
 </html>
