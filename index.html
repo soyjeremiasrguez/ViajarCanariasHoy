@@ -1,36 +1,105 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Viaja a Canarias Hoy | Ofertas y Guías de Viaje</title>
-  <meta name="description" content="Descubre las mejores ofertas para viajar a Canarias. Reserva hoteles, apartamentos y paquetes vacacionales con descuentos exclusivos.">
-  <meta name="keywords" content="viajar a Canarias, ofertas Canarias, hoteles Tenerife, vuelos Gran Canaria, vacaciones Lanzarote">
-  <meta property="og:title" content="Viaja a Canarias Hoy">
-  <meta property="og:description" content="Reserva tu viaje a Canarias con descuentos exclusivos. Hoteles, vuelos y paquetes vacacionales.">
-  <meta property="og:type" content="website">
-  <meta name="robots" content="index, follow">
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Viaja a Canarias con las mejores ofertas y guías turísticas. Descubre playas, excursiones y alojamiento en las Islas Canarias." />
+<title>Viajar Canarias Hoy - Tu web de viajes a Canarias</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 <header>
-  <h1>Viaja a Canarias Hoy</h1>
-  <nav>
-    <a href="index.html">Inicio</a>
-    <a href="ofertas.html">Ofertas</a>
-    <a href="guias.html">Guías</a>
-    <a href="contacto.html">Contacto</a>
+  <nav class="navbar">
+    <div class="logo">Viajar Canarias Hoy</div>
+    <ul class="nav-links">
+      <li><a href="#destinos">Destinos</a></li>
+      <li><a href="#ofertas">Ofertas</a></li>
+      <li><a href="#guias">Guías</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
   </nav>
+  <section class="hero">
+    <h1>Descubre las maravillas de Canarias</h1>
+    <p>Las mejores ofertas y guías para tu próximo viaje.</p>
+    <a href="#ofertas" class="btn-primary">Ver ofertas</a>
+  </section>
 </header>
+
 <main>
-  <section>
+  <section id="destinos" class="section-padding">
+    <h2>Destinos destacados</h2>
+    <div class="cards">
+      <article class="card">
+        <img src="images/tenerife.jpg" alt="Playa en Tenerife" />
+        <h3>Tenerife</h3>
+        <p>Disfruta del Teide, playas y vida nocturna.</p>
+      </article>
+      <article class="card">
+        <img src="images/gran-canaria.jpg" alt="Paisaje en Gran Canaria" />
+        <h3>Gran Canaria</h3>
+        <p>Montañas, dunas y cultura local.</p>
+      </article>
+      <article class="card">
+        <img src="images/lanzarote.jpg" alt="Volcanes en Lanzarote" />
+        <h3>Lanzarote</h3>
+        <p>Parques naturales y paisajes volcánicos.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="ofertas" class="section-padding bg-light">
     <h2>Ofertas exclusivas</h2>
-    <p>Reserva hoteles, apartamentos y paquetes vacacionales con descuentos especiales a través de nuestro socio Canarias.com.</p>
-    <a class="btn" href="https://www.canarias.com?affiliate=1070" target="_blank" rel="nofollow noopener">Reservar ahora</a>
+    <div class="cards">
+      <article class="card">
+        <h3>Paquete Tenerife 5 días</h3>
+        <p>Vuelo + hotel desde 299€</p>
+        <a href="https://canarias.com/paquete-tenerife?aff=TU_CODIGO_AFILIADO" target="_blank" class="btn-secondary">Reservar ahora</a>
+      </article>
+      <article class="card">
+        <h3>Gran Canaria Todo Incluido</h3>
+        <p>Estancia y actividades desde 399€</p>
+        <a href="https://canarias.com/gran-canaria-todo-incluido?aff=TU_CODIGO_AFILIADO" target="_blank" class="btn-secondary">Reservar ahora</a>
+      </article>
+      <article class="card">
+        <h3>Lanzarote Aventura</h3>
+        <p>Excursiones y alojamiento desde 349€</p>
+        <a href="https://canarias.com/lanzarote-aventura?aff=TU_CODIGO_AFILIADO" target="_blank" class="btn-secondary">Reservar ahora</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="guias" class="section-padding">
+    <h2>Guías de viaje</h2>
+    <article>
+      <h3>Qué hacer en Tenerife</h3>
+      <p>Te mostramos las mejores actividades y lugares imprescindibles.</p>
+      <a href="guias.html#tenerife" class="btn-link">Leer guía</a>
+    </article>
+    <article>
+      <h3>Explora Gran Canaria</h3>
+      <p>Consejos para conocer la isla como un local.</p>
+      <a href="guias.html#gran-canaria" class="btn-link">Leer guía</a>
+    </article>
+  </section>
+
+  <section id="contacto" class="section-padding bg-light">
+    <h2>Contacto</h2>
+    <form action="#" method="post" class="contact-form">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+      <button type="submit" class="btn-primary">Enviar</button>
+    </form>
   </section>
 </main>
+
 <footer>
-  <p>© 2025 Viaja a Canarias Hoy — Afiliado de Canarias.com</p>
+  <p>© 2025 Viajar Canarias Hoy. Afiliado de Canarias.com</p>
 </footer>
+
 </body>
 </html>
